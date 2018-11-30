@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Mammal extends Animals {
+public abstract class Mammal extends Animal {
 	//Attributes
 	private int tailLength;
 	

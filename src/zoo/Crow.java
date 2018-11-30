@@ -1,6 +1,6 @@
 package zoo;
 
-public class Crow extends Birds {
+public class Crow extends Bird {
 	
 	//Attributes
 	

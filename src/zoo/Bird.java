@@ -1,6 +1,6 @@
 package zoo;
 
-public abstract class Birds extends Animals {
+public abstract class Bird extends Animal {
 	
 	//Attributes
 	private int wingSpan;
@@ -8,7 +8,7 @@ public abstract class Birds extends Animals {
 	
 	
 	//Constructors
-	public Birds(String vName, int vWingSpan) {
+	public Bird(String vName, int vWingSpan) {
 		super(vName);
 		this.wingSpan = vWingSpan; 
 	}

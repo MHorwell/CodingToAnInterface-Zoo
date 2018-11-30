@@ -1,6 +1,10 @@
 package testZoo;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import zoo.*;
@@ -37,6 +41,27 @@ public class TestAnimals {
 	public void testCrow() {
 		Crow birdTwo = new Crow("Woody", 20);
 		assertEquals("Caw", birdTwo.makeNoise());
+	}
+	
+	@Test
+	public void testListBirds() {
+		Zoo zoo = new Zoo();
+		zoo.makeAnimalList();
+		List<Bird> birdList = new ArrayList<Bird>();
+		birdList.add(zoo.Woody);
+		birdList.add(zoo.Owlbert);
+		assertEquals(birdList, zoo.listBirds(zoo.makeAnimalList()));
+	}
+	
+	@Test
+	public void testListMammals() {
+		Zoo zoo = new Zoo();
+		zoo.makeAnimalList();
+		List<Mammal> mammalList = new ArrayList<Mammal>();
+		mammalList.add(zoo.Benji);
+		mammalList.add(zoo.Milo);
+		mammalList.add(zoo.Nigel);
+		assertEquals(mammalList, zoo.listMammals(zoo.makeAnimalList()));
 	}
 	
 
