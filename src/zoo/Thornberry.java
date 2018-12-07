@@ -16,5 +16,7 @@ public class Thornberry extends Mammal {
 	public String makeNoise() {
 		return "Smashing!";
 	}
+	
+
 
 }

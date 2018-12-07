@@ -1,19 +1,14 @@
 package zoo;
 
 public class Owl extends Bird {
-	//Attributes
-	
-	
-	
-	
-	//Constructors
+	// Attributes
+
+	// Constructors
 	public Owl(String vName, int vWingSpan) {
 		super(vName, vWingSpan);
 	}
-	
-	
-	
-	//Methods
+
+	// Methods
 	public String makeNoise() {
 		return "Hoot";
 	}

@@ -5,8 +5,6 @@ public abstract class Bird extends Animal {
 	//Attributes
 	private int wingSpan;
 	
-	
-	
 	//Constructors
 	public Bird(String vName, int vWingSpan) {
 		super(vName);
@@ -15,6 +13,10 @@ public abstract class Bird extends Animal {
 	
 	
 	//Methods
+	
+	public int getWingSpan(){
+		return this.wingSpan;
+	}
 
 
 }

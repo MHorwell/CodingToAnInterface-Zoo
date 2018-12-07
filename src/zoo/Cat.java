@@ -1,18 +1,15 @@
 package zoo;
 
 public class Cat extends Mammal {
-	//Attributes
-	
-	
-	
-	
-	//Constructors
+	// Attributes
+
+	// Constructors
 	public Cat(String vName, int vTailLength) {
 		super(vName, vTailLength);
 	}
-	
-	//Methods
-	
+
+	// Methods
+
 	public String makeNoise() {
 		return "Meow";
 	}

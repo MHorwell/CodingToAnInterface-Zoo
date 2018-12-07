@@ -1,20 +1,21 @@
 package zoo;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 
 	public static void main(String[] args) {
-		
+
 		Zoo newZoo = new Zoo();
-		List<Animal>zooList = newZoo.makeAnimalList();
-		
-		newZoo.printAnimalInfo(newZoo.listBirds(zooList));
-		System.out.println();
-		newZoo.printAnimalInfo(newZoo.listMammals(zooList));
+		newZoo.add(new Owl("Whiskers", 50));
+		newZoo.add(new Crow("Mr. Mann", 30));
+		newZoo.add(new Cat("Sandy Hogg", 24));
+		newZoo.add(new Dog("Mavis Borg", 89));
+		newZoo.add(new Thornberry("Nigel", 0));
 
+		List<Animal> mammalList = newZoo.filterByAnimal(Mammal.class);
+		for (Animal a : mammalList) {
+			System.out.println(a);
+		}
 	}
-
 }
