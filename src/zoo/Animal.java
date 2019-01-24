@@ -12,12 +12,10 @@ public abstract class Animal implements AnimalNoise{
 	}
 	
 	//Methods
-	 
 	public boolean isInstance(Class<?> animalType) {
 			return animalType.isInstance(this);
 	}
 
-	
 	
 	@Override
 	public String toString() {
